@@ -7,8 +7,13 @@ import 'font-awesome/css/font-awesome.min.css';
 function App() {
   const inlinestyles={
     backgroundColor: 'transparent',
-    margin: '100px',
+    margin: '50px',
     minHeight: '200px',
+    '@media (max-width: 768px)': {
+      backgroundColor: 'transparent',
+      margin: '2px',
+      minHeight: '100px',
+    }
   };
   const inlineimg={
     height:'50%',
@@ -25,10 +30,10 @@ function App() {
         <a href='#aboutus' className='anchor2'>About us</a>
         <a href='#contactus' className='anchor2'>Contact</a>
       </nav></nav>
-      <div class="card text-center shadow-lg p-3 mb-5  rounded" style={inlinestyles}>
+      <div class="card text-center shadow-lg p-3 mb-5  rounded " style={inlinestyles}>
   
   <div class="card-body">
-    <p class="card-text"><span>join our thriving community of open source enthusiasts dedicated to collaborative innovation. Our diverse, global network welcomes individuals passionate about problem-solving, learning, and contributing to cutting-edge projects. Experience the power of transparent communication, shared knowledge, and respect while making a meaningful impact on the world through open source. Explore emerging technologies, evolve with the industry, and be part of a dynamic ecosystem that shapes the future of software development. Join us today to unleash your creativity, enhance your skills, and be a catalyst for positive change.</span></p>
+    <p class="card-text"><span style={{color:'black'}}>join our thriving community of open source enthusiasts dedicated to collaborative innovation. Our diverse, global network welcomes individuals passionate about problem-solving, learning, and contributing to cutting-edge projects. Experience the power of transparent communication, shared knowledge, and respect while making a meaningful impact on the world through open source. Explore emerging technologies, evolve with the industry, and be part of a dynamic ecosystem that shapes the future of software development. Join us today to unleash your creativity, enhance your skills, and be a catalyst for positive change.</span></p>
     <a href="#" class="btn btn-primary">Contribute now</a>
   </div>
   

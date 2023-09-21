@@ -9,6 +9,9 @@ color: #224;
     center / cover no-repeat fixed;
 min-width: auto;
 }
+.card-text{
+  filter: brightness(200%);
+}
 
 .landing {
   justify-content: space-between;

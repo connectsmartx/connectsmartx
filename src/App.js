@@ -130,7 +130,7 @@ function App() {
 
 <div className="container contactus" id='contactus'>
   <h2>Contact us</h2>
-      <form action="https://formsubmit.co/arjunvarma93983@gmail.com" method='POST'>
+      <form action="https://formsubmit.co/arjunvarma93983@gmail.com" method="POST">
         <label htmlFor="fname">Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name.." />
 

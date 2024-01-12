@@ -1,13 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.min.css';
-
+import Django from './Django/django';
 
 function App() {
   const inlinestyles={
     backgroundColor: 'transparent',
-    margin: '50px',
+    margin: '25px',
     minHeight: '200px',
     '@media (max-width: 768px)': {
       backgroundColor: 'transparent',
@@ -19,18 +18,45 @@ function App() {
     height:'50%',
     
   }
+  
   return (
     
     <div className='landing'>
-      <nav className='navbar'>
-      <strong className='nav1'>CONNECTSMARTX</strong>
-      <nav className='navbar2'>
-        <a href='#' className='anchor2'>Home</a>
-        <a href='#project' className='anchor2'>Projects</a>
-        <a href='#aboutus' className='anchor2'>About us</a>
-        <a href='#contactus' className='anchor2'>Contact</a>
-      </nav></nav>
-      <div class="card text-center shadow-lg p-3 mb-5  rounded " style={inlinestyles}>
+      <nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><h4 className='rainbow-text'>ConnectSmartX</h4></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title rainbow-text" id="offcanvasNavbarLabel">ConnectSmartX</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Learning Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactus">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></input>
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="card text-center shadow-lg p-3 mb-5  rounded " style={inlinestyles}>
   
   <div class="card-body">
     <p class="card-text"><span style={{color:'black'}}>join our thriving community of open source enthusiasts dedicated to collaborative innovation. Our diverse, global network welcomes individuals passionate about problem-solving, learning, and contributing to cutting-edge projects. Experience the power of transparent communication, shared knowledge, and respect while making a meaningful impact on the world through open source. Explore emerging technologies, evolve with the industry, and be part of a dynamic ecosystem that shapes the future of software development. Join us today to unleash your creativity, enhance your skills, and be a catalyst for positive change.</span></p>
@@ -38,7 +64,65 @@ function App() {
   </div>
   
 </div> 
-<div className='project' id='project'><h1 className='projectsub'>Projects</h1>
+      <div className="learning_resources" >
+        <div>
+          <h2 style={{textAlign:'center'}}>Learning Resources</h2>
+          <div class="container l_resources">
+ 
+ <div class="card">
+     <div class="card-body hell">
+         <h4>
+             DJANGO
+         </h4>
+         <p>
+         Python web framework for fast, clean, and pragmatic development. MVT architecture, ORM, authentication, and admin panel included.
+         </p>
+         <div class="user">
+             
+             <div class="user-info">
+             <button onClick={Django} className='btn btn-primary'>Start Now</button><br></br><br></br>
+             <button className='btn btn-primary'>Try Sample Projects</button>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="card">
+     <div class="card-body hell">
+         <h4>
+             MERN STACK
+         </h4>
+         <p>
+         A JavaScript-based web development stack comprising MongoDB, Express.js, React, and Node.js. Enables full-stack development with a unified language (JavaScript/TypeScript) across the entire application.         </p>
+         <div class="user">
+           
+             <div class="user-info">
+             <button className='btn btn-primary'>Start Now</button><br></br><br></br>
+             <button className='btn btn-primary'>Try Sample Projects</button>             </div>
+         </div>
+     </div>
+ </div>
+ <div class="card">
+     
+     <div class="card-body hell">
+         
+         <h4>
+             DEVOPS
+         </h4>
+         <p>
+         DevOps synergizes development and operations, fostering collaboration through automated workflows and continuous delivery, optimizing software development and deployment.         </p>
+         <div class="user">
+             <div class="user-info">
+             <button className='btn btn-primary'>Start Now</button><br></br><br></br>
+             <button className='btn btn-primary'>Try Sample Projects</button>             </div>
+         </div>
+     </div>
+ </div>
+</div>
+        </div>
+      </div>
+<br></br>
+<br></br>
+<div className='project' id='project'><h2 className='projectsub'>Projects</h2>
 <div class="container">
  
     <div class="card">
@@ -126,11 +210,12 @@ function App() {
  </div>
 </div>
 
-
+<br></br>
+<br></br>
 
 <div className="container contactus" id='contactus'>
   <h2>Contact us</h2>
-      <form action="https://formsubmit.co/arjunvarma93983@gmail.com" method='POST'>
+      <form action="https://formsubmit.co/arjunvarma93983@gmail.com" method="POST">
         <label htmlFor="fname">Name</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name.." />
 

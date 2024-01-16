@@ -2,8 +2,10 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.min.css';
 import Django from './Django/django';
-
+import Mern from './mern/mern';
+import React, { useState } from 'react';
 function App() {
+  const [isBdyDisabled, setBdyDisabled] = useState(true);
   const inlinestyles={
     backgroundColor: 'transparent',
     margin: '25px',
@@ -18,6 +20,15 @@ function App() {
     height:'50%',
     
   }
+  const [showItem, setShowItem] = useState(null);
+  const handleBdyDisable = (item) => {
+    console.log("Button clicked!");
+    setBdyDisabled(!isBdyDisabled);
+    setShowItem(item);
+    console.log("isBdyDisabled:", isBdyDisabled);
+  };
+  
+
   
   return (
     
@@ -56,14 +67,15 @@ function App() {
     </div>
   </div>
 </nav>
-<div class="card text-center shadow-lg p-3 mb-5  rounded " style={inlinestyles}>
-  
-  <div class="card-body">
-    <p class="card-text"><span style={{color:'black'}}>join our thriving community of open source enthusiasts dedicated to collaborative innovation. Our diverse, global network welcomes individuals passionate about problem-solving, learning, and contributing to cutting-edge projects. Experience the power of transparent communication, shared knowledge, and respect while making a meaningful impact on the world through open source. Explore emerging technologies, evolve with the industry, and be part of a dynamic ecosystem that shapes the future of software development. Join us today to unleash your creativity, enhance your skills, and be a catalyst for positive change.</span></p>
-    <a href="#" class="btn btn-primary">Contribute now</a>
-  </div>
-  
-</div> 
+{ isBdyDisabled ? (<div className="bdy" >
+  <div class="card text-center shadow-lg p-3 mb-5  rounded " style={inlinestyles}>
+    
+    <div class="card-body">
+      <p class="card-text"><span style={{color:'black'}}>join our thriving community of open source enthusiasts dedicated to collaborative innovation. Our diverse, global network welcomes individuals passionate about problem-solving, learning, and contributing to cutting-edge projects. Experience the power of transparent communication, shared knowledge, and respect while making a meaningful impact on the world through open source. Explore emerging technologies, evolve with the industry, and be part of a dynamic ecosystem that shapes the future of software development. Join us today to unleash your creativity, enhance your skills, and be a catalyst for positive change.</span></p>
+      <a href="#" class="btn btn-primary">Contribute now</a>
+    </div>
+    
+  </div> 
       <div className="learning_resources" >
         <div>
           <h2 style={{textAlign:'center'}}>Learning Resources</h2>
@@ -80,7 +92,7 @@ function App() {
          <div class="user">
              
              <div class="user-info">
-             <button onClick={Django} className='btn btn-primary'>Start Now</button><br></br><br></br>
+             <button onClick={()=>handleBdyDisable('django')} className='btn btn-primary'>Start Now</button><br></br><br></br>
              <button className='btn btn-primary'>Try Sample Projects</button>
              </div>
          </div>
@@ -96,7 +108,7 @@ function App() {
          <div class="user">
            
              <div class="user-info">
-             <button className='btn btn-primary'>Start Now</button><br></br><br></br>
+             <button onClick={()=>handleBdyDisable('mern')} className='btn btn-primary'>Start Now</button><br></br><br></br>
              <button className='btn btn-primary'>Try Sample Projects</button>             </div>
          </div>
      </div>
@@ -235,8 +247,13 @@ function App() {
         <input type="submit" value="Submit" />
       </form>
     </div>
-</div>
     
+    </div>):(
+    <div>
+      {showItem =='django' &&<Django />}
+      {showItem =='mern' &&<Mern />}
+    </div>)}
+</div>
   );
 }
 

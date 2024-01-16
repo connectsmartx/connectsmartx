@@ -8,11 +8,9 @@ const Django = () => {
       <div className="node start" id="node1">
         Start
       </div>
-      <svg className="link-arrow" height="100%" width="100%">
-        <line x1="50%" y1="0" x2="50%" y2="100%" stroke="white" strokeWidth="2" />
-      </svg>
+      
       <div className="node" id="node2">
-          Month 1: Getting Started with Django
+          Week 1: Getting Started with Django
         </div>
       <div className='nodeX1'>
         <div className="node" id="node211">
@@ -37,7 +35,7 @@ const Django = () => {
           Create a Simple Django Project
         </div>
       <div className="node" id="node3">
-          Month 2: Database and Models
+          Week 2: Database and Models
       </div>
       <div className="nodeX1">
           <div className="node" id="node3.1">
@@ -57,7 +55,7 @@ const Django = () => {
           </div>
         </div>
         <div className="node" id="node4">
-          Month 3: Views and Templates
+          Week 3: Views and Templates
         </div>
         <div className="nodeX1">
         
@@ -78,7 +76,7 @@ const Django = () => {
           </div>
         </div>
         <div className="node" id="node5">
-          Month 4: Forms and User Authentication
+          Week 4: Forms and User Authentication
         </div>
       <div className="nodeX1">
           <div className="node" id="node5.1">
@@ -92,7 +90,7 @@ const Django = () => {
           </div>
         </div>
       <div className="node" id="node6">
-        Month 5: Static Files and Media Handling
+        Week 5: Static Files and Media Handling
       </div>
       
       <div className="nodeX1">
@@ -107,7 +105,7 @@ const Django = () => {
           </div>
         </div>
         <div className="node" id="node6">
-          Month 6: Django Admin and Security
+          Week 6: Django Admin and Security
         </div>
       <div className="nodeX1">
         
@@ -122,7 +120,7 @@ const Django = () => {
           </div>
         </div>
       <div className="node" id="node7">
-          Month 7: RESTful APIs
+          Week 7: RESTful APIs
         </div>
       <div className="nodeX1">
           <div className="node" id="node7.1">
@@ -136,7 +134,7 @@ const Django = () => {
           </div>
         </div>
         <div className="node" id="node8">
-          Month 8: Django Testing
+          Week 8: Django Testing
         </div>
       <div className="nodeX1">
             <div className="node" id="node8.1">
@@ -150,7 +148,7 @@ const Django = () => {
           </div>
         </div>
         <div className="node" id="node9">
-          Month 9: Deployment and Scaling
+          Week 9: Deployment and Scaling
         </div>
         <div className="nodeX1">
           <div className="node" id="node9.1">
@@ -164,15 +162,13 @@ const Django = () => {
           </div>
         </div>
         <div className="node" id="node10">
-          Month 10: Django Project Structure
+          Week 10: Django Project Structure
         </div>
-      <div className="nodeX1">
-          <div className="node" id="node10.1">
+        <div className="node" id="node10.1">
             Project Refactoring (Two Scoops of Django)
           </div>
-        </div>
         <div className="node" id="node11">
-          Month 11: Advanced Concepts
+          Week 11: Advanced Concepts
         </div>
       <div className="nodeX1">
           <div className="node" id="node11.1">
@@ -186,7 +182,7 @@ const Django = () => {
           </div>
         </div>
       <div className="node" id="node12">
-          Month 12: Final Project and Review
+          Week 12: Final Project and Review
       </div>
       <div className="nodeX1">
             <div className="node" id="node12.1">
@@ -205,9 +201,7 @@ const Django = () => {
             Continued Learning
           </div>
         </div>
-      <svg className="link-arrow" height="100%" width="100%">
-        <line x1="50%" y1="0" x2="50%" y2="100%" stroke="white" strokeWidth="2" />
-      </svg>
+      
       <div className="node end" id="node14">
         End
       </div>

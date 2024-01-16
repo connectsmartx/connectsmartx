@@ -23,11 +23,14 @@
   background-color: #333;
   color: white;
   border: 1px solid #555;
-  border-radius: 5px;
   padding: 2vw;
   margin: 2vw 0;
   width: 30vw;
   max-width: 400px; /* Set maximum width */
+  border-radius: 5px;
+background: #605c5c;
+box-shadow: inset 5px -5px 10px #262525,
+            inset -5px 5px 10px #9a9393;
 }
 
 .node.start {
@@ -48,7 +51,12 @@
     padding: 1vw; /* Adjust padding for smaller screens */
     margin: 1vw 0;
   }
-  
+  #node211 {
+    margin-right: 5px;
+  }
+  #node212{
+    margin-right: 5px;
+  }
 
   .nodeX1 {
     padding: 1vw; /* Adjust padding for smaller screens */

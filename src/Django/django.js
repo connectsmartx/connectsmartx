@@ -22,7 +22,7 @@ const Django = () => {
           <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
         </svg>
         <div className="node" id="node2.2">
-          Web Fundamentals (HTML, CSS, JavaScript)
+          Web Fundamentals
         </div>
         <svg className="link-line" height="100%" width="100%">
           <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />

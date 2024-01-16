@@ -3,6 +3,7 @@ import './Flowchart.css';
 
 const Django = () => {
   return (
+    <div className='jango'>
     <div className="flowchart-container">
       <div className="node start" id="node1">
         Start
@@ -15,45 +16,44 @@ const Django = () => {
         </div>
       <div className='nodeX1'>
         <div className="node" id="node2.1">
-          Learn Python Basics (Codecademy Python Course)
+          Learn Python Basics 
         </div>
         <svg className="link-line" height="100%" width="100%">
           <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
         </svg>
         <div className="node" id="node2.2">
-          Web Fundamentals (HTML, CSS, JavaScript - MDN Web Docs)
+          Web Fundamentals (HTML, CSS, JavaScript)
         </div>
         <svg className="link-line" height="100%" width="100%">
           <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
         </svg>
         <div className="node" id="node2.3">
-          Setup Django Environment (Django Official Documentation)
+          Setup Django Environment 
         </div>
-        <svg className="link-line" height="100%" width="100%">
-          <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
-        </svg>
-        <div className="node" id="node2.4">
-          Create a Simple Django Project (Django Official Tutorial)
-        </div>
+        
+        
       </div>
+      <div className="node" id="node2.4">
+          Create a Simple Django Project
+        </div>
       <div className="node" id="node3">
           Month 2: Database and Models
       </div>
       <div className="nodeX1">
           <div className="node" id="node3.1">
-            Database Concepts (W3Schools SQL Tutorial)
+            Database Concepts 
           </div>
           <svg className="link-line" height="100%" width="100%">
             <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
           </svg>
           <div className="node" id="node3.2">
-            Django Models (Django Models Documentation)
+            Django Models 
           </div>
           <svg className="link-line" height="100%" width="100%">
             <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
           </svg>
           <div className="node" id="node3.3">
-            Model Relationships (Django Model Relationships)
+            Model Relationships
           </div>
         </div>
         <div className="node" id="node4">
@@ -62,19 +62,19 @@ const Django = () => {
         <div className="nodeX1">
         
           <div className="node" id="node4.1">
-            Django Views (Django Views Documentation)
+            Django Views 
           </div>
           <svg className="link-line" height="100%" width="100%">
             <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
           </svg>
           <div className="node" id="node4.2">
-            Django Templates (Django Templates Documentation)
+            Django Templates 
           </div>
           <svg className="link-line" height="100%" width="100%">
             <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
           </svg>
           <div className="node" id="node4.3">
-            Template Language (Django Template Language)
+            Template Language 
           </div>
         </div>
         <div className="node" id="node5">
@@ -82,13 +82,13 @@ const Django = () => {
         </div>
       <div className="nodeX1">
           <div className="node" id="node5.1">
-            Django Forms (Django Forms Documentation)
+            Django Forms
           </div>
           <svg className="link-line" height="100%" width="100%">
             <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
           </svg>
           <div className="node" id="node5.2">
-            User Authentication (Django Authentication Documentation)
+            User Authentication 
           </div>
         </div>
       <div className="node" id="node6">
@@ -97,13 +97,13 @@ const Django = () => {
       
       <div className="nodeX1">
           <div className="node" id="node5.1">
-            Static Files (Django Static Files Documentation)
+            Static Files
           </div>
           <svg className="link-line" height="100%" width="100%">
             <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
           </svg>
           <div className="node" id="node5.2">
-            Media Handling (Django File Uploads Documentation)
+            Media Handling 
           </div>
         </div>
         <div className="node" id="node6">
@@ -112,13 +112,13 @@ const Django = () => {
       <div className="nodeX1">
         
           <div className="node" id="node6.1">
-            Django Admin (Django Admin Documentation)
+            Django Admin 
           </div>
           <svg className="link-line" height="100%" width="100%">
             <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
           </svg>
           <div className="node" id="node6.2">
-            Security Best Practices (Django Security Documentation)
+            Security Best Practices 
           </div>
         </div>
       <div className="node" id="node7">
@@ -126,13 +126,13 @@ const Django = () => {
         </div>
       <div className="nodeX1">
           <div className="node" id="node7.1">
-            API Concepts (MDN Web Docs - HTTP Basics)
+            API Concepts ( HTTP Basics)
           </div>
           <svg className="link-line" height="100%" width="100%">
             <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
           </svg>
           <div className="node" id="node7.2">
-            Django REST framework (Django REST framework Documentation)
+            Django REST framework 
           </div>
         </div>
         <div className="node" id="node8">
@@ -140,13 +140,13 @@ const Django = () => {
         </div>
       <div className="nodeX1">
             <div className="node" id="node8.1">
-            Test-Driven Development (TDD) (Test-Driven Development with Python)
+            Test-Driven Development (TDD) 
           </div>
           <svg className="link-line" height="100%" width="100%">
             <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
           </svg>
           <div className="node" id="node8.2">
-            Django Testing (Django Testing Documentation)
+            Django Testing 
           </div>
         </div>
         <div className="node" id="node9">
@@ -154,13 +154,13 @@ const Django = () => {
         </div>
         <div className="nodeX1">
           <div className="node" id="node9.1">
-            Deployment Basics (Deployment with Django)
+            Deployment Basics 
           </div>
           <svg className="link-line" height="100%" width="100%">
             <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
           </svg>
           <div className="node" id="node9.2">
-            Scalability (Scalability in Django)
+            Scalability 
           </div>
         </div>
         <div className="node" id="node10">
@@ -176,13 +176,13 @@ const Django = () => {
         </div>
       <div className="nodeX1">
           <div className="node" id="node11.1">
-            Custom Middleware (Django Middleware Documentation)
+            Custom Middleware 
           </div>
           <svg className="link-line" height="100%" width="100%">
             <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
           </svg>
           <div className="node" id="node11.2">
-            Caching (Django Caching Documentation)
+            Caching 
           </div>
         </div>
       <div className="node" id="node12">
@@ -211,6 +211,7 @@ const Django = () => {
       <div className="node end" id="node14">
         End
       </div>
+    </div>
     </div>
   );
 };

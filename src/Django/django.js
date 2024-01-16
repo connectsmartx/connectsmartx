@@ -15,25 +15,25 @@ const Django = () => {
           Month 1: Getting Started with Django
         </div>
       <div className='nodeX1'>
-        <div className="node" id="node2.1">
+        <div className="node" id="node211">
           Learn Python Basics 
         </div>
         <svg className="link-line" height="100%" width="100%">
           <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
         </svg>
-        <div className="node" id="node2.2">
-          Web Fundamentals
+        <div className="node" id="node212">
+          Web Fundamentals 
         </div>
         <svg className="link-line" height="100%" width="100%">
           <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
         </svg>
-        <div className="node" id="node2.3">
+        <div className="node" id="node213">
           Setup Django Environment 
         </div>
         
         
       </div>
-      <div className="node" id="node2.4">
+      <div className="node" id="node214">
           Create a Simple Django Project
         </div>
       <div className="node" id="node3">
@@ -126,7 +126,7 @@ const Django = () => {
         </div>
       <div className="nodeX1">
           <div className="node" id="node7.1">
-            API Concepts ( HTTP Basics)
+            API Concepts <br></br> ( HTTP Basics)
           </div>
           <svg className="link-line" height="100%" width="100%">
             <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
@@ -202,7 +202,7 @@ const Django = () => {
             <line x1="50%" y1="50%" x2="60%" y2="50%" stroke="white" strokeWidth="3" />
           </svg>
           <div className="node" id="node12.3">
-            Continued Learning (Django Release Notes)
+            Continued Learning
           </div>
         </div>
       <svg className="link-arrow" height="100%" width="100%">

@@ -1,14 +1,22 @@
+.jango {
+  width: 100%;
+  overflow-x: hidden; /* Hide horizontal overflow on smaller screens */
+}
+
 .flowchart-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
+  padding: 5vw;
 }
-.nodeX1{
+
+.nodeX1 {
   display: flex;
   flex-direction: row;
-  align-items: right;
-  padding: 50px;
+  justify-content: space-between;
+  padding: 2vw;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .node {
@@ -16,9 +24,10 @@
   color: white;
   border: 1px solid #555;
   border-radius: 5px;
-  padding: 10px;
-  margin: 10px 0;
-  width: 300px;
+  padding: 2vw;
+  margin: 2vw 0;
+  width: 30vw;
+  max-width: 400px; /* Set maximum width */
 }
 
 .node.start {
@@ -29,14 +38,25 @@
   background-color: red;
 }
 
-/* Existing styles ... */
 
-.arrow {
-  position: relative;
-  width: 0;
-  height: 0;
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 600px) {
+  .node {
+    width: 90vw;
+    padding: 1vw; /* Adjust padding for smaller screens */
+    margin: 1vw 0;
+  }
+  
+
+  .nodeX1 {
+    padding: 1vw; /* Adjust padding for smaller screens */
+  }
 }
 
-.arrow::before {
-  position: absolute;
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .node {
+    width: 40vw; /* Adjust width for medium-sized screens */
+  }
 }

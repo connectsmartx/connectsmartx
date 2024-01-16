@@ -2,8 +2,22 @@ import React from 'react';
 import './Flowchart.css'; 
 
 const Django = () => {
+  const introcls={
+    backgroundColor: 'transparent',
+    margin: '25px',
+    minHeight: '200px',
+    '@media (max-width: 768px)': {
+      backgroundColor: 'transparent',
+      margin: '2px',
+      minHeight: '100px',
+    }
+  };
   return (
     <div className='jango'>
+      <div className='intro card text-center shadow-lg p-2 mb-1  rounded' style={introcls}>
+      <h3>Django Framework</h3>
+      <p>
+Django is a high-level Python web framework that promotes rapid development, clean and pragmatic design. It follows the model-view-template (MVT) architectural pattern, providing a robust toolkit for building web applications with features like an ORM, authentication, and admin panel, streamlining development processes.</p></div>
     <div className="flowchart-container">
       <div className="node start" id="node1">
         Start
